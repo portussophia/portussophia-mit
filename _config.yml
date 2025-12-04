@@ -1,0 +1,7 @@
+title: "PortusSophia™ Research Node"
+description: "Governance-first architecture, self-auditing methods, and structural postulates for PortusSophia™."
+theme: minima
+
+markdown: kramdown
+github:
+  is_project_page: false
