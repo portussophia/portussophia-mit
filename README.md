@@ -1,158 +1,123 @@
-# PortusSophia™ Research Node (MIT Academic Node)
+# PortusSophia™ MIT Packet (Canonical Source)
 
-**Domain:** `mit.portussophia.com`
-**Purpose:** Academic / research / institutional review content
-**Tone:** Formal, neutral, research-focused (no personal narrative)
+**Repository Purpose:** Canonical home of the MIT research packet for PortusSophia™ and PortusNexus™.
+
+**Primary Viewing Surface:** GitHub's native Markdown rendering (you're reading it now).
+
+**Status:** Foundational Preview — under active development, pre–internal peer review.
 
 ---
 
-## Repository Structure
+## 🎯 Quick Start for Reviewers
+
+**Read the packet:** [`preview.md`](./preview.md) — ~5,800 words introducing PortusNexus™ as a constraint-first relational calculus.
+
+**What's inside:**
+- **Abstract** — Core thesis and structural claims
+- **Three Foundational Axioms** — Genesis, Constraint, Non-Scalable Cost
+- **Seven Postulates (N₁–N₇)** — Formal dependency lattice with triadic integration
+- **Relational Calculus** — How PortusNexus™ differs from unconstrained formalisms
+- **Closing Invitation** — Research directions and engagement paths
+
+**Citation-stable snapshots:** See [Releases](../../releases) for tagged versions (`v0.1-preview`, etc.)
+
+---
+
+## 📂 Repository Structure
 
 ```
 /
-├── _config.yml           # Jekyll config for GitHub Pages
-├── index.md              # Landing page (research overview)
-├── golden-trace.md       # Golden Trace ledger overview + example entries
-├── methods.md            # Governance workflows, witness cycles, integrity sealing
-├── postulates.md         # PortusNexus™ postulates (N₁–N₇)
-├── governance.md         # Steward roles, boundaries, checks-and-balances
-└── README.md             # This file
+├── preview.md           # MIT Preview Foundational Packet (canonical, ~5,800 words)
+├── index.md             # Research Node landing page (governance methods, postulates)
+├── README.md            # This file (packet orientation for reviewers)
+├── postulates.md        # Detailed N₁–N₇ exposition
+├── methods.md           # Governance workflows, witness cycles
+├── governance.md        # Steward roles, boundaries
+├── golden-trace.md      # Ledger integrity methodology
+└── _config.yml          # Jekyll config (legacy, for mit.portussophia.com if revived)
 ```
 
 ---
 
-## Deployment Instructions
+## 🏛️ Architectural Note
 
-### Step 1: Create GitHub Repository
+This repo is the **canonical source** for MIT-facing content.
 
-Create new repository:
-- **Name:** `portussophia-mit` (or similar)
-- **Organization:** `portussophia`
-- **Visibility:** Public
+**Web views:**
+- **Primary (recommended):** GitHub rendering at `github.com/portussophia/portussophia-mit`
+- **Legacy Jekyll site:** `mit.portussophia.com` (may be stale, not maintained)
+- **MkDocs exploration:** `www.portussophia.com/mit/preview/` (exploratory, not production path)
 
-### Step 2: Push Content
-
-```powershell
-# From this directory (site-public/mit-node/)
-git init
-git add .
-git commit -m "Initial commit: MIT academic node bootstrap"
-git branch -M main
-git remote add origin https://github.com/portussophia/portussophia-mit.git
-git push -u origin main
-```
-
-### Step 3: Enable GitHub Pages
-
-In repository settings:
-1. Navigate to **Settings → Pages**
-2. Set **Source:** Deploy from branch `main` → `/ (root)`
-3. Set **Custom domain:** `mit.portussophia.com`
-4. Click **Save**
-5. Wait ~5 minutes for GitHub to generate SSL certificate
-
-### Step 4: Configure Cloudflare DNS
-
-In Cloudflare dashboard for `portussophia.com` zone:
-
-1. Navigate to **DNS**
-2. Add or update record:
-   - **Type:** CNAME
-   - **Name:** `mit`
-   - **Target:** `portussophia.github.io` (or your org Pages host)
-   - **TTL:** Auto
-   - **Proxy:** DNS only (gray cloud) — for initial debugging
-3. Delete any conflicting A records for `mit` subdomain
-
-### Step 5: Configure Cloudflare SSL/TLS
-
-In Cloudflare dashboard:
-1. Navigate to **SSL/TLS → Overview**
-2. Set **Mode:** Full (not Flexible)
-3. Navigate to **SSL/TLS → Edge Certificates**
-4. Ensure **Always Use HTTPS:** ✅ On
-5. Ensure **Minimum TLS Version:** 1.2
-
-### Step 6: Verify Deployment
-
-```powershell
-# Test DNS propagation
-nslookup mit.portussophia.com
-
-# Expected: CNAME → portussophia.github.io → A records
-
-# Test HTTP response (wait 5-10 minutes for propagation)
-curl -I https://mit.portussophia.com
-
-# Expected: 200 OK
-```
+For maximum stability and minimal drift, **always cite the GitHub repo** or specific tagged releases.
 
 ---
 
-## Content Guidelines
+## 📜 What is PortusNexus™?
 
-**Audience:** Academic, institutional, external review
-**Tone:** Formal, neutral, research-focused
-**Restrictions:**
-- No personal narrative
-- No "pitch" or marketing language
-- No unverified claims
-- Citations and references required where applicable
+From `preview.md`:
 
-**What Belongs Here:**
-- Governance architecture documentation
-- Integrity ledger (Golden Trace) overview
-- Witness cycle methodology
-- Postulates and structural constraints
-- Formal proofs and mathematical models (future)
-- Peer review artifacts (future)
+> **PortusNexus™** is a relational calculus where:
+> - **Constraint precedes possibility** (Axiom 2)
+> - **Ethical cost is non-scalable** (Axiom 3: ∂C/∂N = k, where k > 0)
+> - **Mutual affirmation and bounded emergence** are structurally enforced (Postulates N₃, N₇)
 
-**What Does NOT Belong Here:**
-- Personal stories or narrative arcs
-- Motivational content
-- Unverified philosophical speculation
-- Marketing or promotional material
+This is not a philosophical aspiration projected onto mathematics—it is a **mathematical formalism where ethical structure is axiomatic**.
+
+The packet integrates PortusNexus™ with the **PortusSophia™ triadic foundation**:
+- **PortusStructura™** (formal constraint)
+- **PortusEthica™** (non-scalable cost)
+- **PortusLumen™** (emergent meaning within bounds)
 
 ---
 
-## Maintenance
+## 🔬 For Academic Reviewers
 
-**Owner:** PeterGate (Governance Steward)
-**Content Steward:** Sara Harmonia (tone/language only)
-**Approval Authority:** Founder (all content changes require approval)
+**What we're claiming:**
+1. Ethical cost can be encoded as a structural axiom (not merely a preference function)
+2. Non-scalable cost ∂C/∂N = k fundamentally alters the admissible state space
+3. The seven postulates (N₁–N₇) form a dependency lattice with testable properties
+4. PortusNexus™ is falsifiable: violations of N₃ (Mutual Affirmation) or N₇ (Emergence Within Bounds) are detectable
 
-**Update Process:**
-1. Draft content changes locally
-2. Submit for LOGOS structural review (if canonical)
-3. Submit for DRACO risk review (if canonical)
-4. Obtain Founder approval
-5. Commit and push to `main` branch
-6. Verify deployment at `mit.portussophia.com`
+**What we're NOT claiming:**
+- This is complete (it's explicitly a preview)
+- This resolves all philosophical debates about ethics-in-mathematics
+- The formalism is fully mature (diagrams pending, proofs in development)
 
----
-
-## Governance Compliance
-
-**Classification:** Public (CUI-Eligible Draft)
-**Distribution:** Unlimited (Subject to Future Reclassification)
-**Integrity:** All canonical content must be sealed via Golden Trace ledger
-**Trademarks:** All PortusSophia™ trademark entities must include ™ symbol
-**Controlled Lexical Element:** *"Here and Now!"* (if referenced, must be exact format)
+**How to engage:**
+- Read `preview.md` first (foundational axioms + postulates)
+- Check `postulates.md` for deeper N₁–N₇ exposition
+- Review `methods.md` for governance workflow validation
+- Open Issues or Discussions in this repo for questions/critiques
 
 ---
 
-## Status
+## 📌 Version History
 
-**Node Status:** Bootstrap Phase (Pending Deployment)
-**Last Updated:** 2025-12-04
-**Next Actions:**
-1. Create GitHub repository `portussophia-mit`
-2. Push content from `site-public/mit-node/`
-3. Enable GitHub Pages with custom domain `mit.portussophia.com`
-4. Configure Cloudflare DNS (CNAME: `mit` → `portussophia.github.io`)
-5. Configure Cloudflare SSL/TLS (Mode: Full)
-6. Verify deployment
+- **v0.1-preview** (December 2025) — Initial foundational packet (~5,800 words, 6 sections, 6 diagram placeholders)
+
+See [Releases](../../releases) for tagged snapshots with SHA-256 integrity records.
 
 ---
 
-**PortusSophia™** — Governance-first architecture, preserved in *"Here and Now!"*
+## 🔗 Related Resources
+
+- **Parent Project:** [PortusSophia™](https://github.com/portussophia/portussophia) (full governance architecture)
+- **Canonical Texts:** `Book/` directory in parent repo (philosophical corpus)
+- **Public Node:** `www.portussophia.com` (general audience orientation)
+
+---
+
+## 📧 Contact
+
+For academic collaboration or formal review inquiries, contact via GitHub Issues or the email listed in parent repo governance.
+
+---
+
+**Trademarks:** PortusSophia™, PortusNexus™, PortusStructura™, PortusEthica™, PortusLumen™, PortusNunc™
+**Controlled Lexical Element:** *"Here and Now!"* (italic, smart quotes, protected constant)
+
+**Integrity:** SHA-256 records tracked in PortusSophia™ governance ledger (`logs/sara_audit.log` in parent repo).
+
+---
+
+*Canonical source — December 2025 — Governance-driven development, anchored in presence.*

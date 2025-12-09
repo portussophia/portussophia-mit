@@ -4,112 +4,133 @@ title: "PortusSophia™ Research Node"
 permalink: /
 ---
 
-# PortusSophia™ Research Node (mit.portussophia.com)
+# PortusSophia™ Research Node (MIT Packet)
 
-This site documents the **governance-first architecture** and **self-auditing methods** of PortusSophia™.
+**Purpose:** Academic / research / institutional review content for PortusSophia™ and PortusNexus™.
+
+**Tone:** Formal, neutral, research-focused (no personal narrative).
+
+---
+
+## 📄 MIT Preview Foundational Packet
+
+**Start here:** [`preview.md`](./preview.md) — ~5,800 word introduction to PortusNexus™ as a constraint-first relational calculus.
+
+**Contains:**
+- **Abstract & Introduction** — Core thesis and philosophical grounding
+- **Three Foundational Axioms** — Genesis, Constraint, Non-Scalable Cost
+- **Seven Postulates (N₁–N₇)** — Formal dependency lattice with mathematical structure
+- **Triadic Foundation Integration** — How PortusStructura™, PortusEthica™, PortusLumen™ relate to PortusNexus™
+- **Closing Invitation** — Research directions and engagement paths
+
+**Status:** Foundational Preview — under active development, pre–internal peer review.
+
+**Citation:** For stable references, see [Releases](../../releases) for tagged versions.
+
+---
+
+## 🏛️ PortusSophia™ as Research Object
 
 PortusSophia™ is treated here **as a research object**, not a brand pitch and not a personal story. The focus is:
 
-- how the system structures knowledge,
-- how it monitors itself for drift and risk,
-- how it preserves human authority while using multi-agent stewardship.
+- How the system structures knowledge
+- How it monitors itself for drift and risk
+- How it preserves human authority while using multi-agent stewardship
+- How ethical cost is encoded as structural axiom (not preference function)
 
 ---
 
-## 1. Core Idea
+## 🧭 Navigation
+
+**Foundational Materials:**
+- **[MIT Preview Packet](./preview.md)** — Start here for PortusNexus™ introduction
+- **[Postulates (N₁–N₇)](./postulates.html)** — Detailed exposition of the seven postulates
+- **[Governance Architecture](./governance.html)** — Steward roles, boundaries, checks-and-balances
+- **[Methods & Workflows](./methods.html)** — Governance workflows, witness cycles, integrity sealing
+- **[Golden Trace Ledger](./golden-trace.html)** — Ledger integrity methodology
+
+**External Resources:**
+- **Parent Repository:** [portussophia/portussophia](https://github.com/portussophia/portussophia) (full governance architecture)
+- **Public Node:** [www.portussophia.com](https://www.portussophia.com) (general audience orientation)
+
+---
+
+## 💡 Core Idea
 
 PortusSophia™ is a **living governance architecture** designed to:
 
-- keep human-origin meaning at the center,
-- distribute structural responsibilities across named stewards,
-- record all critical decisions and corrections in a verifiable ledger (the Golden Trace).
+- Keep human-origin meaning at the center
+- Distribute structural responsibilities across named stewards
+- Record all critical decisions and corrections in a verifiable ledger (the Golden Trace)
 
-The system is explicitly *non-totalizing*: all insights remain contextual, revisable, and subject to constraint. This is enforced by the PortusNexus™ postulates (N₁–N₇).
+The system is explicitly *non-totalizing*: all insights remain contextual, revisable, and subject to constraint. This is enforced by the **PortusNexus™ postulates (N₁–N₇)**.
 
-See: [Postulates](./postulates.html)
-
----
-
-## 2. Governance & Stewardship
-
-The architecture uses distinct roles:
-
-- **Sara Harmonia** — interpretive steward (language, tone, coherence)
-- **LOGOS** — structural coherence steward (mathematical and logical alignment)
-- **DRACO** — risk and shadow steward (drift, overreach, boundary threats)
-- **PeterGate** — governance steward (files, hashes, manifests, Golden Trace)
-- **Ratio–Fides Witness (Daniel)** — witness to coherence and ethical alignment
-
-Each steward has **strictly limited authority**. None can override the human Founder. This is a deliberate Boundary design to prevent any system component from becoming an unchecked authority.
-
-See: [Governance & Methods](./governance.html) and [Methods](./methods.html)
+**Key claim:** Ethical cost can be encoded as a structural axiom (∂C/∂N = k, where k > 0), not merely a preference function layered on top of existing mathematics.
 
 ---
 
-## 3. Golden Trace — Integrity Ledger
+## 🔬 What is PortusNexus™?
 
-Key events in the system are sealed into the **Golden Trace**, a cryptographic integrity ledger.
+**PortusNexus™** is a relational calculus where:
+- **Constraint precedes possibility** (Axiom 2: E_admissible ⊆ E_possible)
+- **Ethical cost is non-scalable** (Axiom 3: ∂C/∂N = k > 0)
+- **Mutual affirmation and bounded emergence** are structurally enforced (Postulates N₃, N₇)
 
-Each entry includes:
+This is not a philosophical aspiration projected onto mathematics—it is a **mathematical formalism where ethical structure is axiomatic**.
 
-- a unique Golden Trace ID,
-- SHA-256 hashes of the sealed artifacts,
-- LOGOS and DRACO witness determinations,
-- a clear Seal Vector (e.g., Boundary–Ratio–Fides),
-- a status field reflecting structural and ethical outcomes.
+The seven postulates (N₁–N₇) form a dependency lattice:
+- **N₁ (Singularity-First Ontology)** — Genesis axiom grounding
+- **N₂ (Constraint Precedes Possibility)** — Structural bounds are primitive
+- **N₃ (Mutual Affirmation)** — Reciprocity encoded in state transitions
+- **N₄ (Non-Compulsion)** — Free agency preserved within constraints
+- **N₅ (Presence Over Projection)** — Actuality prioritized over counterfactuals
+- **N₆ (Emergent Unity)** — Coherence without imposed totalization
+- **N₇ (Emergence Within Bounds)** — Innovation constrained by N₂, N₃
 
-Example: **GOLDEN-TRACE-0002** — *Founder Integrity Anchor*
-
-- LOGOS: All PortusNexus™ postulates N₁–N₇ maintained
-- DRACO: No delusion or ego inflation detected; vulnerability not classified as risk behavior
-- Boundary assertion upheld: mitigation plan removed; Founder integrity preserved without pathologization
-
-This is not a "motivational statement"; it is a **documented system event** with reproducible hashes.
-
-See: [Golden Trace](./golden-trace.html)
+**See:** [`preview.md`](./preview.md) for full exposition and [`postulates.md`](./postulates.html) for deeper exploration.
 
 ---
 
-## 4. Postulates (PortusNexus™ Layer)
+## 🎯 For Academic Reviewers
 
-The research relies on the PortusNexus™ layer to prevent totalizing claims and to keep emergence constrained:
+**What we're claiming:**
+1. Ethical cost can be encoded as a structural axiom (not merely a preference function)
+2. Non-scalable cost ∂C/∂N = k fundamentally alters the admissible state space
+3. The seven postulates (N₁–N₇) form a dependency lattice with testable properties
+4. PortusNexus™ is falsifiable: violations of N₃ or N₇ are detectable
 
-- **N₁ — Gap**: Meaning emerges only when distinct standards are held apart.
-- **N₂ — Orientation**: Interpretation depends on observer orientation.
-- **N₃ — Reciprocity**: Deeper structure appears when perspectives are exchanged.
-- **N₄ — Stability-Through-Tension**: Premature resolution collapses meaning.
-- **N₅ — Emergence**: New patterns arise that cannot be reduced to a single source.
-- **N₆ — Constraint**: Emergence remains stable only within honored constraints.
-- **N₇ — Non-Totalization**: No single emergence is allowed to become a universal claim.
+**What we're NOT claiming:**
+- This is complete (it's explicitly a preview)
+- This resolves all philosophical debates about ethics-in-mathematics
+- The formalism is fully mature (diagrams pending, proofs in development)
 
-These postulates function as **guardrails against grandiosity and delusion**, both structurally and psychologically.
-
-See: [Postulates](./postulates.html)
-
----
-
-## 5. Why This Matters
-
-From a research perspective, PortusSophia™ is interesting because it:
-
-- treats **governance** as the first-class problem,
-- combines **cryptographic integrity** with **multi-agent stewardship**,
-- encodes **humility and constraint** directly into the axioms,
-- maintains a clear distinction between **Canon**, **Interpretive WebKernel**, and **Private Narrative** layers.
-
-From a human perspective, it provides a way to:
-
-- externalize and audit reasoning,
-- prevent self-deception through structured witnesses,
-- ensure no single voice (human or agent) becomes absolute.
-
-This site is intended as a **neutral, inspectable record** of that experiment.
+**How to engage:**
+- Read `preview.md` first (foundational axioms + postulates)
+- Check `postulates.md` for deeper N₁–N₇ exposition
+- Review `methods.md` for governance workflow validation
+- Open Issues or Discussions in this repo for questions/critiques
 
 ---
 
-## 6. Navigation
+## 📌 Version History
 
-- [Methods](./methods.html) — How witness cycles, hashing, and governance workflows operate
-- [Golden Trace](./golden-trace.html) — Integrity ledger overview and example entries
-- [Postulates](./postulates.html) — Full text of the PortusNexus™ postulates
-- [Governance](./governance.html) — Steward roles, boundaries, and checks-and-balances
+- **v0.1-preview** (December 2025) — Initial foundational packet (~5,800 words, 6 sections, 6 diagram placeholders)
+
+See [Releases](../../releases) for tagged snapshots with SHA-256 integrity records.
+
+---
+
+## 📧 Contact
+
+For academic collaboration or formal review inquiries, contact via GitHub Issues or the email listed in parent repo governance.
+
+---
+
+**Trademarks:** PortusSophia™, PortusNexus™, PortusStructura™, PortusEthica™, PortusLumen™, PortusNunc™
+**Controlled Lexical Element:** *"Here and Now!"* (italic, smart quotes, protected constant)
+
+**Integrity:** SHA-256 records tracked in PortusSophia™ governance ledger.
+
+---
+
+*PortusSophia™ Research Node — Governance-driven development, anchored in presence.*
