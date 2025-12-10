@@ -4,9 +4,9 @@
 
 ---
 
-**Authors:** James Makela (Founder, PortusSophia™)
-**Date:** December 9, 2025
-**Version:** v0.1 (Preview Draft)
+> **Authors:** James Roy Dennis (Founder, PortusSophia™)
+  **Date:** December 9, 2025
+  **Version:** v0.1 (Preview Draft)
 **Status:** 🔄 Under Active Development
 
 ---
